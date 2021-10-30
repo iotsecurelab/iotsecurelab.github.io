@@ -63,6 +63,14 @@ ul.posts {
   width: 400px;
 }
 
+.portrait4{
+  background-image: url('../img/testbed.jpeg');
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  height: 300px;
+  width: 900px;
+}
+
 .portrait2{
   background-image: url('../img/logonew1.jpg');
   background-repeat: no-repeat;
