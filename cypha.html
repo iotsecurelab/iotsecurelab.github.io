@@ -8,6 +8,42 @@
 		<link rel="stylesheet" href="/css/academicons.css">
 		<link rel="stylesheet" href="/css/font-awesome.min.css">
 		<style>
+#nav {
+list-style:none inside;
+margin:0;
+padding:10;
+text-align:center;
+}
+#nav li {
+display:block;
+margin:0;
+position:relative;
+float:left;
+background: DodgerBlue; /* menu background color */
+}
+#nav li a {
+display:block;
+padding:0;
+text-decoration:none;
+width:100px; /* this is the width of the menu items */
+line-height:20px; /* this is the hieght of the menu items */
+color:#ffffff; /* list item font color */
+}
+#nav li li a {font-size:80%;} /* smaller font size for sub menu items */
+#nav li:hover {background:#003f20;} /* highlights current hovered list item and the parent list items when hovering over sub menues */
+#nav ul {
+position:absolute;
+padding:10;
+left:0;
+display:none; /* hides sublists */
+}
+#nav li:hover ul ul {display:none;} /* hides sub-sublists */
+#nav li:hover ul {display:block;} /* shows sublist on hover */
+#nav li li:hover ul {
+display:block; /* shows sub-sublist on hover */
+margin-left:200px; /* this should be the same width as the parent list item */
+margin-top:-35px; /* aligns top of sub menu with top of list item */
+}
 a:link
 {
 color:DodgerBlue
@@ -16,30 +52,23 @@ color:DodgerBlue
 	</head>
 	<body link="blue">
 		<nav>
-    		<ul>
+    		<ul id="nav">
         		<li><a href="/">Home</a></li>
 	        	<li><a href="/People.html">Members</a></li>
 			<li><a href="/Research.html">Research</a></li>
         		<li><a href="Publications.html">Publications</a></li>
 			<li><a href="/code.html">Code</a></li>
 			<li><a href="/dataset.html">Dataset</a></li>
-		        <li><a href="/course.html">Course</a></li>
-                        <!-- <li><a href="/testbed.html">IoT Testbed</a></li> -->
-			
-			<li><div class="subnav">
-			
-    <button class="subnavbtn">IoT Testbed <i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="/testbed.html">IoT Testbed</a>
-      <a href="/testbed.html">IoT Testbed</a>
-  </div></div></li>
-			
-			
-			
+			<li><a href="/course.html">Course</a></li>
+			<li><a href="/testbed.html">IoT Testbed</a>
+			<ul>
+                        <li><a href="/dataset.html">Cyberes</a></li>
+                        <li><a href="/course.html">CyPhA</a></li>
+			</ul></li>
 			<li><a href="/Project.html">Project</a></li>
         		
     		</ul>
-		</nav>
+		</nav></br></br>
 		<div class="container">
     		<div class="blurb">
 <h2>CyPhA</h2>
